@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator | Front End Mentor</title>
+</head>
+<body>
+    <div class="wrapper"> <!--wrapper contains HTML content below, sorta like a box-->
+        <header>
+           <h1>QR Code Generator</h1>
+        </header>
+        <div class="form">
+            <input type="text" placeholder="Enter text here">
+            <button>Generate QR code</button>
+        </div>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="qr-code">
+        </div>
+    </div>
+</body>
+</html>

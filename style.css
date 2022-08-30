@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+ }
+ body /* style mods to the body of the HTML doc */
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(95, 148, 161);
+ }
+ .wrapper /* style mods to the wrapper (container) of doc */
+{
+    background: aliceblue;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+}
+header h1
+{
+    font-size: 21px;
+    font-weight: 1000;
+}
+ .wrapper .form
+ {
+    margin: 20px 0 30px;
+ }
+ .form :where(input, button)
+ {
+    width: 100%;
+ }
+ .form :where(input, ::placeholder) /*i dont know why i have to do ::placeholder instead of just ,placeholder like above */
+ {
+    text-align: center;
+    font-size: medium;
+ }
